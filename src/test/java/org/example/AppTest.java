@@ -60,20 +60,24 @@ public class AppTest {
     @Test
     @DisplayName("잘못된 명영어 입력에 대한 처리")
     void t4(){
-        //여러 줄 입력 받기 -> """ 더블쿼터 3개
-        Scanner sc = TestUtil.genScanner("""
-                종료2
-                종료
-                """);
-        ByteArrayOutputStream output = TestUtil.setOutToByteArray();
+//        //여러 줄 입력 받기 -> """ 더블쿼터 3개
+//        Scanner sc = TestUtil.genScanner("""
+//                종료2
+//                """);
+//        ByteArrayOutputStream output = TestUtil.setOutToByteArray();
+//
+//        //종료 명령어를 입력한 Scanner를 App.class에 전달해서 run()함수 실행한다.
+//        new App(sc).run();
+//
+//        String rs = output.toString();
+//        TestUtil.clearSetOutToByteArray(output);
 
-        //종료 명령어를 입력한 Scanner를 App.class에 전달해서 run()함수 실행한다.
-        new App(sc).run();
-
-        String rs = output.toString();
-        TestUtil.clearSetOutToByteArray(output);
+        String rs = AppTestRunner.run("종료2");
 
         Assertions.assertThat(rs)
                 .contains("올바르지 않은 명령입니다.");
     }
+
+
+
 }
