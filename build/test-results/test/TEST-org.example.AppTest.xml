@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-06T05:21:01" hostname="DESKTOP-HFLO4D3" time="0.043">
+<testsuite name="org.example.AppTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-06T05:54:03" hostname="DESKTOP-HFLO4D3" time="0.047">
   <properties/>
-  <testcase name="스캐너에 키보드가 아닌 문자열을 입력으로 설정" classname="org.example.AppTest" time="0.042"/>
+  <testcase name="스캐너에 키보드가 아닌 문자열을 입력으로 설정" classname="org.example.AppTest" time="0.04"/>
   <testcase name="프로그램 시작시 타이틀 출력 그리고 종료" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="프로그램 시작시 타이틀 출력 그리고 종료" classname="org.example.AppTest" time="0.002"/>
+  <testcase name="잘못된 명영어 입력에 대한 처리" classname="org.example.AppTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
